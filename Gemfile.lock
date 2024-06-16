@@ -231,6 +231,7 @@ PLATFORMS
   aarch64-linux
 
 DEPENDENCIES
+  bcrypt
   bootsnap
   capybara
   debug
