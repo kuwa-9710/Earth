@@ -1,0 +1,33 @@
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e4edf4;
+
+  h1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  nav {    
+    display: flex;
+
+    button {      
+      color: white;
+      background-color: #38bdf8;
+      text-decoration: none;
+      border-radius: 50px;
+      border: none;
+      padding: 10px 20px;
+      margin-right: 1rem;
+
+      &:hover {
+        cursor: pointer;
+        color: white;        
+        background-color: #0ea5e9;
+      }
+    }
+  }
+}
