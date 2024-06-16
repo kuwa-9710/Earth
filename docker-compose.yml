@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:8.0
+    volumes:
+      - ./tmp/db:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: earth_development
+      MYSQL_USER: dev_user
+      MYSQL_PASSWORD: dev_password
+    networks:
+      - app-network
+
+  web:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -b '0.0.0.0'"
+    volumes:
+      - .:/myapp
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: mysql2://dev_user:dev_password@db:3306/earth_development
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
