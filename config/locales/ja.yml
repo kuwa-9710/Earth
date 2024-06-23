@@ -1,0 +1,26 @@
+ja:
+  hello: "こんにちは"
+  devise:
+    registrations:
+      new:
+        title: "アカウント作成"
+    sessions:
+      new:
+        sign_in: "ログイン"
+    shared:
+      links:
+        sign_up: "アカウント作成"
+        forgot_password: "パスワードをお忘れの場合"
+        resend_confirmation: "確認メールを再送信"
+        resend_unlock: "アンロック指示を再送信"
+    passwords:
+      title: "パスワードをお忘れの場合"
+      reset_email: "再設定用のメールアドレス"
+      send_reset_password: "パスワード再設定の詳細を送信"
+  activerecord:
+    attributes:
+      user:
+        email: "メールアドレス"
+        password: "パスワード"
+        password_confirmation: "パスワードの再確認"
+        remember_me: "ログインを保持する"

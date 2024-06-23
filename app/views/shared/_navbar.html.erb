@@ -1,7 +1,8 @@
 <nav>  
   <% if user_signed_in? %>
-    <%= button_to 'Logout', destroy_user_session_path, method: :delete %>
+    <%= button_to 'Logout', destroy_user_session_path, method: :delete, class: 'p_button isBlueBg'%>
   <% else %> 
-    <%= button_to 'Sign Up', new_user_registration_path %>
+    <%= link_to 'Log in', new_user_session_path, class: 'p_button isBlue'%>
+    <%= link_to 'Sign Up', new_user_registration_path, class: 'p_button isBlueBg'%>
   <% end %>
 </nav>

@@ -1,0 +1,28 @@
+.p_button {
+  font-size: 14px;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 24px;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  &.isBlue {
+    color: #38bdf8;
+  }
+
+  &.isBlueBg {
+    color: white;
+    background-color: #38bdf8;
+
+    &:hover {
+      color: white;
+      background-color: #0ea5e9;
+    }
+  }
+}

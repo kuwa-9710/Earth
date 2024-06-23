@@ -29,5 +29,18 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
+en:  
+  hello: "Hello"
+  devise:
+    sessions:
+      new:
+        sign_in: "Sign in"
+    shared:
+      links:
+        sign_up: "Sign up"
+  activerecord:
+    attributes:
+      user:
+        email: "Email"
+        password: "Password"
+        remember_me: "Remember me"
